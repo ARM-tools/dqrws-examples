@@ -5,6 +5,12 @@ response <- GET(URL)
 stop_for_status(response) # exit if status not ‘okay’
 timeblocks <- content(response,type="text/csv", header=FALSE, sep="|")
 print(timeblocks)
+#   V1(start)   V2(end)
+#   944199060  944285400
+#  1031333220 1031338440
+#  1031290020 1031296680
+#  1033644000 1033651200
+#  1126265520 1126272720
 
 # Read in sample data for this datastream
 library(RNetCDF) 
